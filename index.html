@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACM-W NMIMS Indore — Empowering Women in Computing</title>
+  <meta name="description" content="Official website of ACM-W NMIMS Indore Student Chapter. Celebrating 2 years of innovation, technical excellence, research, hackathons, and empowering women in computing.">
+  <meta name="keywords" content="ACM-W, ACM, NMIMS Indore, Women in Computing, Hackathons, AI Workshops, Open Source, Computer Science, Technology Community">
+  <meta name="author" content="ACM-W NMIMS Indore">
+  <meta name="theme-color" content="#020d1a">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ACM-W NMIMS Indore — Empowering Women in Computing">
+  <meta property="og:description" content="Join 340+ members across 27+ technical events, hackathons, and research initiatives.">
+  <meta property="og:image" content="assets/images/frame-1.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Subtle Scroll Progress -->
+  <div id="scrollProgressBar" class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       1. FIXED NAVBAR
+  ═══════════════════════════════════════════════════════════════ -->
+  <header id="siteHeader" class="site-header">
+    <div class="container header-inner">
+      <!-- Logo -->
+      <a href="#home" class="brand-logo-btn" data-scroll-to="home" aria-label="ACM-W Home">
+        <img src="assets/images/frame-1.png" alt="ACM-W" class="brand-logo-img">
+        <span class="brand-logo-text">ACM<span class="text-cyan">‑W</span></span>
+      </a>
+
+      <!-- Desktop Navigation Pills -->
+      <nav class="nav-desktop-pill" aria-label="Main Navigation">
+        <a href="#home" class="nav-pill-link active" data-target="home" data-scroll-to="home">HOME</a>
+        <a href="#about-us" class="nav-pill-link" data-target="about-us" data-scroll-to="about-us">ABOUT</a>
+        <a href="#featured-projects" class="nav-pill-link" data-target="featured-projects" data-scroll-to="featured-projects">PROJECTS</a>
+        <a href="#upcoming-events" class="nav-pill-link" data-target="upcoming-events" data-scroll-to="upcoming-events">EVENTS</a>
+        <a href="#latest-news" class="nav-pill-link" data-target="latest-news" data-scroll-to="latest-news">BLOG</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <button type="button" class="header-cta-btn" data-open-join>
+        JOIN ACM‑W
+      </button>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button type="button" id="mobileToggle" class="mobile-menu-toggle" aria-label="Open Navigation Menu">
+        <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer Overlay -->
+  <div id="mobileNavOverlay" class="mobile-nav-overlay" aria-hidden="true">
+    <button type="button" id="mobileNavClose" class="mobile-nav-close" aria-label="Close Navigation Menu">
+      <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+    <a href="#home" class="mobile-nav-link" data-scroll-to="home">HOME</a>
+    <a href="#about-us" class="mobile-nav-link" data-scroll-to="about-us">ABOUT</a>
+    <a href="#featured-projects" class="mobile-nav-link" data-scroll-to="featured-projects">PROJECTS</a>
+    <a href="#upcoming-events" class="mobile-nav-link" data-scroll-to="upcoming-events">EVENTS</a>
+    <a href="#latest-news" class="mobile-nav-link" data-scroll-to="latest-news">BLOG</a>
+    <button type="button" class="btn-primary mobile-nav-cta" data-open-join>JOIN ACM‑W</button>
+  </div>
+
+  <main id="home">
+    <!-- ═══════════════════════════════════════════════════════════════
+         4. HERO BANNER SECTION
+    ═══════════════════════════════════════════════════════════════ -->
+    <section class="hero-section">
+      <!-- Three.js 3D Interactive Canvas -->
+      <canvas id="threeCanvas" class="three-canvas" aria-hidden="true"></canvas>
+
+      <!-- Parallax background photo & layered glow -->
+      <div id="heroParallaxBg" class="hero-parallax-bg"></div>
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-gradient-overlay"></div>
+
+      <div class="ambient-blob blob-1"></div>
+      <div class="ambient-blob blob-2"></div>
+
+      <div class="container hero-content">
+        <!-- Celebrating badge -->
+        <div class="hero-badge reveal-on-scroll">
+          <span class="pulse-dot"></span>
+          <span class="hero-badge-text">Celebrating 2 Years of Innovation</span>
+        </div>
+
+        <!-- Logo -->
+        <img src="assets/images/frame-1.png" alt="ACM-W Logo" class="hero-logo-img reveal-on-scroll reveal-delay-1">
+
+        <!-- Display Headline -->
+        <h1 class="hero-headline reveal-on-scroll reveal-delay-2">
+          <span class="line-1">TWO YEARS</span>
+          <span class="line-2 text-shimmer">OF INNOVATION.</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="hero-description reveal-on-scroll reveal-delay-3">
+          Welcome to ACM-W NMIMS Indore — empowering technical excellence, impactful innovation, and a global legacy.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-actions reveal-on-scroll reveal-delay-4">
+          <button type="button" class="btn-primary" data-open-join>BECOME A MEMBER</button>
+          <button type="button" class="btn-secondary" data-scroll-to="chapter-impact">EXPLORE IMPACT</button>
+        </div>
+      </div>
+
+      <!-- Scroll down indicator -->
+      <div class="hero-scroll-indicator">
+        <span>Scroll</span>
+        <svg class="scroll-arrow" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         5. INFINITE MARQUEE TICKER
+    ═══════════════════════════════════════════════════════════════ -->
+    <div class="marquee-wrapper" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-item"><span class="marquee-text">TWO YEARS OF INNOVATION</span><span class="marquee-bullet"></span></div>
+        <div class="marquee-item"><span class="marquee-text">340+ MEMBERS</span><span class="marquee-bullet"></span></div>
+        <div class="marquee-item"><span class="marquee-text">27+ EVENTS HOSTED</span><span class="marquee-bullet"></span></div>
+        <div class="marquee-item"><span class="marquee-text">9+ AWARDS WON</span><span class="marquee-bullet"></span></div>
+        <div class="marquee-item"><span class="marquee-text">ACM INDIA SUMMIT</span><span class="marquee-bullet"></span></div>
+        <div class="marquee-item"><span class="marquee-text">WOMEN IN COMPUTING</span><span class="marquee-bullet"></span></div>
+        <div class="marquee-item"><span class="marquee-text">HACKATHONS · WORKSHOPS · RESEARCH</span><span class="marquee-bullet"></span></div>
+        <div class="marquee-item"><span class="marquee-text">NMIMS INDORE</span><span class="marquee-bullet"></span></div>
+
+        <!-- Duplicated for continuous infinite marquee -->
+        <div class="marquee-item"><span class="marquee-text">TWO YEARS OF INNOVATION</span><span class="marquee-bullet"></span></div>
+        <div class="marquee-item"><span class="marquee-text">340+ MEMBERS</span><span class="marquee-bullet"></span></div>
+        <div class="marquee-item"><span class="marquee-text">27+ EVENTS HOSTED</span><span class="marquee-bullet"></span></div>
+        <div class="marquee-item"><span class="marquee-text">9+ AWARDS WON</span><span class="marquee-bullet"></span></div>
+        <div class="marquee-item"><span class="marquee-text">ACM INDIA SUMMIT</span><span class="marquee-bullet"></span></div>
+        <div class="marquee-item"><span class="marquee-text">WOMEN IN COMPUTING</span><span class="marquee-bullet"></span></div>
+        <div class="marquee-item"><span class="marquee-text">HACKATHONS · WORKSHOPS · RESEARCH</span><span class="marquee-bullet"></span></div>
+        <div class="marquee-item"><span class="marquee-text">NMIMS INDORE</span><span class="marquee-bullet"></span></div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         6. ABOUT CHAPTER SECTION (White Theme)
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="about-us" class="about-section">
+      <span class="watermark-text" style="right: 5%; top: 45%;">02</span>
+
+      <div class="container about-grid">
+        <!-- Photo with decorative background -->
+        <div class="about-image-wrap reveal-on-scroll">
+          <div class="about-image-bg-accent"></div>
+          <img src="assets/images/black-athletic-woman-playing-padel-in-mixed-doubles-on-outdoor-c.png" alt="About ACM-W Community" class="about-img" loading="lazy">
+          
+          <!-- Floating badge -->
+          <div class="about-stat-badge">
+            <div class="stat-badge-number">2+</div>
+            <div class="stat-badge-label">Years Strong</div>
+          </div>
+        </div>
+
+        <!-- Narrative Content -->
+        <div class="about-content-wrap reveal-on-scroll reveal-delay-2">
+          <div class="section-label-wrap">
+            <span class="section-line"></span>
+            <span class="section-label">About Our Chapter</span>
+          </div>
+
+          <h2 class="about-heading">
+            EMPOWERING<br>
+            WOMEN IN<br>
+            <span class="text-cyan">COMPUTING</span>
+          </h2>
+
+          <p class="about-text">
+            ACM-W NMIMS Indore is the official women in computing chapter of ACM — creating an inclusive environment where aspiring technologists learn, lead, and grow together.
+          </p>
+          <p class="about-text">
+            Through workshops, mentorship, technical events, and leadership opportunities, we empower students to excel in computing and leave a lasting impact.
+          </p>
+
+          <!-- Quick Stats Row -->
+          <div class="about-quick-stats">
+            <div class="quick-stat-col">
+              <div class="quick-stat-val" data-counter-target="340" data-counter-suffix="+">340+</div>
+              <div class="quick-stat-lbl">Members</div>
+            </div>
+            <div class="quick-stat-col">
+              <div class="quick-stat-val" data-counter-target="27" data-counter-suffix="+">27+</div>
+              <div class="quick-stat-lbl">Events</div>
+            </div>
+            <div class="quick-stat-col">
+              <div class="quick-stat-val" data-counter-target="9" data-counter-suffix="+">9+</div>
+              <div class="quick-stat-lbl">Awards</div>
+            </div>
+          </div>
+
+          <button type="button" class="btn-dark" data-scroll-to="featured-projects">
+            LEARN MORE
+            <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         7. FEATURED EVENTS & PROJECTS MAGAZINE (Dark Theme)
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="featured-projects" class="featured-section">
+      <div class="container">
+        <!-- Header -->
+        <div class="featured-header reveal-on-scroll">
+          <div>
+            <div class="section-label-wrap">
+              <span class="section-line"></span>
+              <span class="section-label">Events & Projects</span>
+            </div>
+            <h2 class="section-title light-text">
+              FEATURED<br><span class="text-cyan">HIGHLIGHTS</span>
+            </h2>
+          </div>
+          <p class="featured-header-sub">
+            Top workshops, hackathons, and technology projects that defined our journey.
+          </p>
+        </div>
+
+        <!-- Magazine 3D Tilt Grid -->
+        <div class="magazine-grid">
+          <!-- Large Featured Card -->
+          <div class="tilt-card card-large reveal-on-scroll" data-tilt-intensity="5" onclick="openDetailsModal('ACM-W LAUNCH', 'FEATURED MILESTONE', '2024', 'Empowering women through inclusion, leadership, and growth — a landmark milestone that set the foundation for everything we have built since.')">
+            <img src="assets/images/outdoor-padel-lesson-with-a-padel-coach-1024x682-jpg.png" alt="ACM-W Launch" class="card-image-layer" loading="lazy">
+            <div class="card-overlay"></div>
+
+            <div class="card-top-row">
+              <span class="card-tag">FEATURED</span>
+              <span class="card-year-watermark">2024</span>
+            </div>
+
+            <div class="card-bottom-content">
+              <h3 class="card-title">ACM-W LAUNCH</h3>
+              <p class="card-desc">Empowering women through inclusion, leadership, and growth — a landmark milestone that set the foundation for everything we've built since.</p>
+              <span class="card-action-link">
+                READ MORE
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <!-- Stack of 2 Side Cards -->
+          <div class="magazine-side-stack">
+            <!-- Techjenga -->
+            <div class="tilt-card card-compact reveal-on-scroll reveal-delay-1" data-tilt-intensity="6" onclick="openDetailsModal('TECHJENGA', 'FLAGSHIP EVENT', '2024', 'Creative problem-solving through engaging cross-domain challenges. Teams tackled algorithmic riddles, web architectures, and system design sprints.')">
+              <img src="assets/images/multiracial-group-of-athletes-going-for-an-outdoor-mixed-doubles.png" alt="Techjenga" class="card-image-layer" loading="lazy">
+              <div class="card-overlay"></div>
+
+              <div class="card-compact-content">
+                <div class="card-top-row" style="position: relative; top: 0; left: 0; right: 0;">
+                  <span class="card-tag">EVENT</span>
+                  <span class="card-year-watermark" style="font-size: 2.5rem;">2024</span>
+                </div>
+                <div>
+                  <h3 class="card-title">TECHJENGA</h3>
+                  <p class="card-desc" style="opacity: 1; transform: translateY(0); margin-bottom: 0;">Creative problem-solving through engaging cross-domain challenges.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- ACM India Summit -->
+            <div class="tilt-card card-compact reveal-on-scroll reveal-delay-2" data-tilt-intensity="6" onclick="openDetailsModal('ACM INDIA SUMMIT 2025', 'NATIONAL SUMMIT', '2025', 'Connecting students with national ACM initiatives, keynotes from global researchers, and direct industry networking.')">
+              <img src="assets/images/padel-coach-with-a-student-learning-techniques-on-the-court-for-.png" alt="ACM India Summit" class="card-image-layer" loading="lazy">
+              <div class="card-overlay"></div>
+
+              <div class="card-compact-content">
+                <div class="card-top-row" style="position: relative; top: 0; left: 0; right: 0;">
+                  <span class="card-tag">SUMMIT</span>
+                  <span class="card-year-watermark" style="font-size: 2.5rem;">2025</span>
+                </div>
+                <div>
+                  <h3 class="card-title">ACM INDIA SUMMIT 2025</h3>
+                  <p class="card-desc" style="opacity: 1; transform: translateY(0); margin-bottom: 0;">Connecting students with national ACM initiatives and industry insights.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         8. STUDENT BENEFITS SECTION (White Theme)
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="member-benefits" class="benefits-section">
+      <span class="watermark-text" style="left: -5%; top: 50%;">W</span>
+
+      <div class="container benefits-grid">
+        <!-- Benefits Image -->
+        <div class="benefits-image-wrap reveal-on-scroll">
+          <img src="assets/images/image.png" alt="ACM-W Student Benefits" class="benefits-img" loading="lazy">
+          
+          <div class="benefits-floating-card">
+            <div class="floating-icon-box">
+              <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
+            <div>
+              <div class="stat-badge-number" style="font-size: 1.65rem; color: var(--text-navy);">340+</div>
+              <div class="stat-badge-label" style="color: #94a3b8;">Active Members</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Benefits Content List -->
+        <div class="reveal-on-scroll reveal-delay-2">
+          <div class="section-label-wrap">
+            <span class="section-line"></span>
+            <span class="section-label">Why Choose ACM‑W</span>
+          </div>
+
+          <h2 class="about-heading" style="margin-bottom: 1.5rem;">
+            WHY STUDENTS<br>
+            CHOOSE <span class="text-cyan">US</span>
+          </h2>
+
+          <ul class="benefits-list">
+            <li class="benefit-item">
+              <div class="benefit-num-circle">01</div>
+              <div>
+                <h4 class="benefit-title">Technical Workshops & Labs</h4>
+                <p class="benefit-desc">Hands-on sessions in AI, Web, IoT & emerging technologies.</p>
+              </div>
+            </li>
+            <li class="benefit-item">
+              <div class="benefit-num-circle">02</div>
+              <div>
+                <h4 class="benefit-title">Networking & Industry Exposure</h4>
+                <p class="benefit-desc">Connect with professionals, alumni, and top hiring companies.</p>
+              </div>
+            </li>
+            <li class="benefit-item">
+              <div class="benefit-num-circle">03</div>
+              <div>
+                <h4 class="benefit-title">Global ACM Community Access</h4>
+                <p class="benefit-desc">Join a worldwide network of computing professionals & researchers.</p>
+              </div>
+            </li>
+            <li class="benefit-item">
+              <div class="benefit-num-circle">04</div>
+              <div>
+                <h4 class="benefit-title">Leadership & Mentorship Programs</h4>
+                <p class="benefit-desc">Lead events, mentor peers, and grow both technically and personally.</p>
+              </div>
+            </li>
+          </ul>
+
+          <blockquote class="benefits-quote">
+            "Everything is designed to make your experience smooth, social, and deeply impactful for your career."
+          </blockquote>
+
+          <button type="button" class="btn-dark" data-open-join>
+            BECOME A MEMBER
+            <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         9. WHAT ACM-W OFFERS (Dark 3D Tilt Cards)
+    ═══════════════════════════════════════════════════════════════ -->
+    <section class="offerings-section">
+      <div class="container">
+        <!-- Header -->
+        <div class="featured-header reveal-on-scroll">
+          <div>
+            <div class="section-label-wrap">
+              <span class="section-line"></span>
+              <span class="section-label">Member Benefits</span>
+            </div>
+            <h2 class="section-title light-text">
+              WHAT <span class="text-cyan">ACM‑W</span><br>OFFERS
+            </h2>
+          </div>
+          <p class="featured-header-sub">
+            Fostering technical excellence, innovation, and leadership for the next generation of computing professionals.
+          </p>
+        </div>
+
+        <!-- 3 Offerings Cards -->
+        <div class="offerings-grid">
+          <!-- Learn -->
+          <div class="offering-card tilt-card reveal-on-scroll" style="--card-glow: rgba(97,217,248,0.2); --card-accent: var(--cyan);" data-tilt-intensity="5">
+            <div class="offering-top">
+              <span class="offering-num">01</span>
+              <div class="offering-arrow-btn">
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+              </div>
+            </div>
+            <span class="offering-tag">Skill Up</span>
+            <h3 class="offering-title">LEARN</h3>
+            <div class="offering-divider"></div>
+            <ul class="offering-items">
+              <li class="offering-item"><span class="offering-dot"></span>Technical Workshops</li>
+              <li class="offering-item"><span class="offering-dot"></span>Industry Certifications</li>
+              <li class="offering-item"><span class="offering-dot"></span>Expert Guest Lectures</li>
+            </ul>
+          </div>
+
+          <!-- Build -->
+          <div class="offering-card tilt-card reveal-on-scroll reveal-delay-1" style="--card-glow: rgba(59,130,246,0.2); --card-accent: #60a5fa;" data-tilt-intensity="5">
+            <div class="offering-top">
+              <span class="offering-num">02</span>
+              <div class="offering-arrow-btn" style="color: #60a5fa;">
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+              </div>
+            </div>
+            <span class="offering-tag">Create &amp; Ship</span>
+            <h3 class="offering-title">BUILD</h3>
+            <div class="offering-divider"></div>
+            <ul class="offering-items">
+              <li class="offering-item"><span class="offering-dot" style="background-color: #60a5fa;"></span>Collaborative Projects</li>
+              <li class="offering-item"><span class="offering-dot" style="background-color: #60a5fa;"></span>Hackathons &amp; Sprints</li>
+              <li class="offering-item"><span class="offering-dot" style="background-color: #60a5fa;"></span>Open Source Contributions</li>
+            </ul>
+          </div>
+
+          <!-- Lead -->
+          <div class="offering-card tilt-card reveal-on-scroll reveal-delay-2" style="--card-glow: rgba(144,205,225,0.2); --card-accent: var(--sky);" data-tilt-intensity="5">
+            <div class="offering-top">
+              <span class="offering-num">03</span>
+              <div class="offering-arrow-btn" style="color: var(--sky);">
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+              </div>
+            </div>
+            <span class="offering-tag">Step Up</span>
+            <h3 class="offering-title">LEAD</h3>
+            <div class="offering-divider"></div>
+            <ul class="offering-items">
+              <li class="offering-item"><span class="offering-dot" style="background-color: var(--sky);"></span>Chapter Leadership Roles</li>
+              <li class="offering-item"><span class="offering-dot" style="background-color: var(--sky);"></span>Event Management &amp; Planning</li>
+              <li class="offering-item"><span class="offering-dot" style="background-color: var(--sky);"></span>Community Impact Projects</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         10. CHAPTER TIMELINE / JOURNEY HIGHLIGHTS (Dark)
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="chapter-timeline" class="timeline-section">
+      <div class="container">
+        <!-- Header -->
+        <div style="text-align: center;" class="reveal-on-scroll">
+          <div class="section-label-wrap" style="justify-content: center;">
+            <span class="section-line"></span>
+            <span class="section-label">Chapter Timeline</span>
+            <span class="section-line"></span>
+          </div>
+          <h2 class="section-title light-text">
+            OUR JOURNEY<br><span class="text-cyan">SO FAR</span>
+          </h2>
+        </div>
+
+        <!-- Timeline Grid -->
+        <div class="timeline-grid">
+          <div class="timeline-connector"></div>
+
+          <!-- 2024 -->
+          <div class="timeline-card reveal-on-scroll">
+            <div class="timeline-image-container">
+              <img src="assets/images/background-2.png" alt="2024 Foundation" class="timeline-img" loading="lazy">
+              <div class="timeline-overlay"></div>
+
+              <div class="timeline-stat-chip">
+                <div class="timeline-stat-num">100+</div>
+                <div class="timeline-stat-lbl">Founding Members</div>
+              </div>
+
+              <div class="timeline-year-watermark">2024</div>
+
+              <div class="timeline-content">
+                <h3 class="timeline-milestone">FOUNDATION</h3>
+                <p class="timeline-sub">Building the Community</p>
+              </div>
+            </div>
+            <p class="timeline-desc">
+              Established our chapter with an inaugural cohort of dedicated student leaders, launching our first series of technical workshops and community-building events.
+            </p>
+          </div>
+
+          <!-- 2025 -->
+          <div class="timeline-card reveal-on-scroll reveal-delay-1">
+            <div class="timeline-image-container">
+              <img src="assets/images/background-3.png" alt="2025 Growth" class="timeline-img" loading="lazy">
+              <div class="timeline-overlay"></div>
+
+              <div class="timeline-stat-chip">
+                <div class="timeline-stat-num">27+</div>
+                <div class="timeline-stat-lbl">Events Hosted</div>
+              </div>
+
+              <div class="timeline-year-watermark">2025</div>
+
+              <div class="timeline-content">
+                <h3 class="timeline-milestone">GROWTH</h3>
+                <p class="timeline-sub">Expanding Impact</p>
+              </div>
+            </div>
+            <p class="timeline-desc">
+              Scaled our programs with national recognition at ACM India Summit, launching hackathons, research collaborations, and industry partnerships.
+            </p>
+          </div>
+
+          <!-- 2026 -->
+          <div class="timeline-card reveal-on-scroll reveal-delay-2">
+            <div class="timeline-image-container">
+              <img src="assets/images/background-4.png" alt="2026 Legacy" class="timeline-img" loading="lazy">
+              <div class="timeline-overlay"></div>
+
+              <div class="timeline-stat-chip">
+                <div class="timeline-stat-num">9+</div>
+                <div class="timeline-stat-lbl">Awards Won</div>
+              </div>
+
+              <div class="timeline-year-watermark">2026</div>
+
+              <div class="timeline-content">
+                <h3 class="timeline-milestone">LEGACY</h3>
+                <p class="timeline-sub">Innovation in Action</p>
+              </div>
+            </div>
+            <p class="timeline-desc">
+              Cementing our position as a leading technical chapter with award-winning projects, 340+ members, and a thriving culture of continuous innovation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         11. CHAPTER IMPACT DASHBOARD (White Theme)
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="chapter-impact" class="impact-section">
+      <div class="container">
+        <!-- Header -->
+        <div style="text-align: center;" class="reveal-on-scroll">
+          <div class="section-label-wrap" style="justify-content: center;">
+            <span class="section-line"></span>
+            <span class="section-label">By the Numbers</span>
+            <span class="section-line"></span>
+          </div>
+          <h2 class="section-title dark-text">
+            CHAPTER IMPACT<br><span class="text-cyan">DASHBOARD</span>
+          </h2>
+        </div>
+
+        <!-- 3 Dashboard Cards with Animated Counters -->
+        <div class="impact-grid">
+          <!-- Card 1: Members -->
+          <div class="impact-card light tilt-card reveal-on-scroll" data-tilt-intensity="4">
+            <div class="impact-category-row">
+              <div>
+                <span class="impact-cat-text">01 / COMMUNITY</span>
+                <span class="impact-cat-tag">Growing network</span>
+              </div>
+              <div class="impact-arrow-badge">
+                <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="impact-counter-wrap">
+              <span class="impact-counter-num" data-counter-target="340" data-counter-suffix="+">340+</span>
+              <span class="impact-counter-unit">MEMBERS</span>
+            </div>
+
+            <div class="impact-divider"></div>
+
+            <ul class="impact-items">
+              <li class="impact-item">
+                <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="var(--blue-primary)">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                </svg>
+                Growing student network
+              </li>
+              <li class="impact-item">
+                <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="var(--blue-primary)">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                </svg>
+                Cross-domain collaboration
+              </li>
+              <li class="impact-item">
+                <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="var(--blue-primary)">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                </svg>
+                Leadership opportunities
+              </li>
+              <li class="impact-item">
+                <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="var(--blue-primary)">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                </svg>
+                Global ACM ecosystem
+              </li>
+            </ul>
+
+            <button type="button" class="impact-btn" data-open-join>EXPLORE</button>
+          </div>
+
+          <!-- Card 2: Events (Dark Highlight) -->
+          <div class="impact-card dark tilt-card reveal-on-scroll reveal-delay-1" data-tilt-intensity="4">
+            <div class="impact-category-row">
+              <div>
+                <span class="impact-cat-text">02 / ENGAGEMENT</span>
+                <span class="impact-cat-tag">Live interactions</span>
+              </div>
+              <div class="impact-arrow-badge">
+                <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="impact-counter-wrap">
+              <span class="impact-counter-num" data-counter-target="27" data-counter-suffix="+">27+</span>
+              <span class="impact-counter-unit">EVENTS</span>
+            </div>
+
+            <div class="impact-divider"></div>
+
+            <ul class="impact-items">
+              <li class="impact-item">
+                <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="var(--cyan)">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                </svg>
+                Technical workshops
+              </li>
+              <li class="impact-item">
+                <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="var(--cyan)">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                </svg>
+                Speaker sessions
+              </li>
+              <li class="impact-item">
+                <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="var(--cyan)">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                </svg>
+                Hackathons &amp; competitions
+              </li>
+              <li class="impact-item">
+                <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="var(--cyan)">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                </svg>
+                Industry interactions
+              </li>
+            </ul>
+
+            <button type="button" class="impact-btn" data-scroll-to="upcoming-events">VIEW ALL</button>
+          </div>
+
+          <!-- Card 3: Awards -->
+          <div class="impact-card light tilt-card reveal-on-scroll reveal-delay-2" data-tilt-intensity="4">
+            <div class="impact-category-row">
+              <div>
+                <span class="impact-cat-text">03 / EXCELLENCE</span>
+                <span class="impact-cat-tag">Recognized impact</span>
+              </div>
+              <div class="impact-arrow-badge">
+                <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="impact-counter-wrap">
+              <span class="impact-counter-num" data-counter-target="9" data-counter-suffix="+">9+</span>
+              <span class="impact-counter-unit">AWARDS</span>
+            </div>
+
+            <div class="impact-divider"></div>
+
+            <ul class="impact-items">
+              <li class="impact-item">
+                <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="var(--blue-primary)">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                </svg>
+                Competition achievements
+              </li>
+              <li class="impact-item">
+                <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="var(--blue-primary)">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                </svg>
+                Chapter milestones
+              </li>
+              <li class="impact-item">
+                <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="var(--blue-primary)">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                </svg>
+                Technical showcases
+              </li>
+              <li class="impact-item">
+                <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="var(--blue-primary)">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                </svg>
+                Excellence recognition
+              </li>
+            </ul>
+
+            <button type="button" class="impact-btn" data-scroll-to="featured-projects">SEE ALL</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         12. UPCOMING EVENTS BENTO GRID (White Theme)
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="upcoming-events" class="events-section">
+      <div class="container">
+        <!-- Header -->
+        <div class="featured-header reveal-on-scroll">
+          <div>
+            <div class="section-label-wrap">
+              <span class="section-line"></span>
+              <span class="section-label">Upcoming Events</span>
+            </div>
+            <h2 class="section-title dark-text">
+              BE PART OF<br>THE ACTION
+            </h2>
+          </div>
+          <button type="button" class="btn-link" data-open-join>
+            VIEW ALL EVENTS
+            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Bento Grid -->
+        <div class="bento-grid">
+          <!-- Featured Big Bento: AI Workshop -->
+          <div class="bento-item featured-bento reveal-on-scroll" onclick="openDetailsModal('AI WORKSHOP SERIES', 'WORKSHOP', 'June 28–30, 2026', 'Deep dive into machine learning, neural networks, PyTorch, and transformer models with practical labs and mentorship.')">
+            <img src="assets/images/05.png" alt="AI Workshop Series" class="bento-img" loading="lazy">
+            <div class="bento-overlay"></div>
+
+            <div class="bento-badge-wrap">
+              <span class="bento-badge"><span class="pulse-dot" style="width: 6px; height: 6px;"></span>WORKSHOP</span>
+            </div>
+
+            <div class="bento-content">
+              <time class="bento-date">June 28–30, 2026</time>
+              <h3 class="bento-title">AI Workshop Series</h3>
+              <p class="bento-subtitle">Deep dive into machine learning &amp; neural networks</p>
+            </div>
+          </div>
+
+          <!-- Open Source Sprint -->
+          <div class="bento-item reveal-on-scroll reveal-delay-1" onclick="openDetailsModal('OPEN SOURCE SPRINT', 'SPRINT', 'June 10–12, 2026', 'Collaborative sprint where members contribute to high-impact open source repositories and build real-world software together.')">
+            <img src="assets/images/07.png" alt="Open Source Sprint" class="bento-img" loading="lazy">
+            <div class="bento-overlay"></div>
+
+            <div class="bento-badge-wrap">
+              <span class="bento-badge"><span class="pulse-dot" style="width: 6px; height: 6px;"></span>SPRINT</span>
+            </div>
+
+            <div class="bento-content">
+              <time class="bento-date">June 10–12, 2026</time>
+              <h3 class="bento-title">Open Source Sprint</h3>
+              <p class="bento-subtitle">Build &amp; contribute to real projects</p>
+            </div>
+          </div>
+
+          <!-- Hackathon 2026 -->
+          <div class="bento-item reveal-on-scroll reveal-delay-2" onclick="openDetailsModal('HACKATHON 2026', 'HACKATHON', 'June 15, 2026', '48 hours of intense coding, prototyping, and building the future with cash prizes, hardware kits, and industry judges.')">
+            <img src="assets/images/background-1.png" alt="Hackathon 2026" class="bento-img" loading="lazy">
+            <div class="bento-overlay"></div>
+
+            <div class="bento-badge-wrap">
+              <span class="bento-badge"><span class="pulse-dot" style="width: 6px; height: 6px;"></span>HACKATHON</span>
+            </div>
+
+            <div class="bento-content">
+              <time class="bento-date">June 15, 2026</time>
+              <h3 class="bento-title">Hackathon 2026</h3>
+              <p class="bento-subtitle">48 hours of building the future</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         13. JOIN CLUB CALL TO ACTION (Parallax Dark Section)
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="join-acmw" class="join-cta-section">
+      <div id="joinParallaxBg" class="join-parallax-bg"></div>
+      <div class="join-overlay"></div>
+
+      <div class="container">
+        <div class="join-grid">
+          <!-- Text & CTA -->
+          <div class="reveal-on-scroll">
+            <div class="section-label-wrap">
+              <span class="section-line"></span>
+              <span class="section-label">Get Involved</span>
+            </div>
+
+            <h2 class="join-headline">
+              JOIN <span class="text-cyan">THE</span><br>
+              CLUB &amp;<br>
+              <span style="color: rgba(255, 255, 255, 0.65);">START TODAY</span>
+            </h2>
+
+            <p class="join-desc">
+              Become part of a growing community of innovators, developers, researchers, and future technology leaders. Your journey starts here.
+            </p>
+
+            <div class="hero-actions" style="justify-content: flex-start;">
+              <button type="button" class="btn-primary" data-open-join>
+                JOIN US NOW
+                <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </button>
+              <button type="button" class="btn-secondary" data-scroll-to="member-benefits">LEARN MORE</button>
+            </div>
+          </div>
+
+          <!-- Stats Grid -->
+          <div class="join-stats-grid reveal-on-scroll reveal-delay-2">
+            <div class="join-stat-box">
+              <div class="join-stat-num" data-counter-target="340" data-counter-suffix="+">340+</div>
+              <div class="join-stat-lbl">Members</div>
+            </div>
+            <div class="join-stat-box">
+              <div class="join-stat-num" data-counter-target="27" data-counter-suffix="+">27+</div>
+              <div class="join-stat-lbl">Events</div>
+            </div>
+            <div class="join-stat-box">
+              <div class="join-stat-num" data-counter-target="2" data-counter-suffix="+">2+</div>
+              <div class="join-stat-lbl">Years</div>
+            </div>
+            <div class="join-stat-box">
+              <div class="join-stat-num" data-counter-target="9" data-counter-suffix="+">9+</div>
+              <div class="join-stat-lbl">Awards</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         14. LATEST NEWS & UPDATES (White Theme)
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="latest-news" class="news-section">
+      <div class="container">
+        <!-- Header -->
+        <div class="featured-header reveal-on-scroll">
+          <div>
+            <div class="section-label-wrap">
+              <span class="section-line"></span>
+              <span class="section-label">Recent Posts</span>
+            </div>
+            <h2 class="section-title dark-text">
+              LATEST NEWS<br><span class="text-cyan">&amp; UPDATES</span>
+            </h2>
+          </div>
+          <button type="button" class="btn-link" onclick="openDetailsModal('ACM-W BLOG ARCHIVE', 'BLOG ARCHIVE', '2026', 'Access all technical articles, research paper summaries, event roundups, and student spotlights published by ACM-W NMIMS Indore.')">
+            VIEW ALL POSTS
+            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- News Layout: Featured Left + 2 Compact Right -->
+        <div class="news-grid">
+          <!-- Featured Big Article -->
+          <article class="news-featured-card reveal-on-scroll" onclick="openDetailsModal('Event Highlights', 'HIGHLIGHTS', 'June 04, 2026 · 3 min read', 'A roundup of the most memorable moments, talks, and demos from our recent series of technical events and workshops. Over 200 participants engaged in real-time project demos and expert panels.')">
+            <div class="news-featured-img-wrap">
+              <img src="assets/images/mixed-adult-couple-celebrate-winning-the-point-in-padel-on-outdo.png" alt="Event Highlights" class="news-featured-img" loading="lazy">
+              <div class="bento-badge-wrap">
+                <span class="bento-badge"><span class="pulse-dot" style="width: 6px; height: 6px;"></span>HIGHLIGHTS</span>
+              </div>
+            </div>
+            <div class="news-meta-row">
+              <time class="news-date">June 04, 2026</time>
+              <span class="news-read-time">· 3 min read</span>
+            </div>
+            <h3 class="news-title">Event Highlights</h3>
+            <p class="news-excerpt">A roundup of the most memorable moments, talks, and demos from our recent series of technical events and workshops.</p>
+            <span class="btn-link">
+              READ MORE
+              <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M7 17L17 7M17 7H7M17 7V17" />
+              </svg>
+            </span>
+          </article>
+
+          <!-- Compact Articles Stack -->
+          <div class="news-side-stack">
+            <!-- Article 1 -->
+            <article class="news-compact-item reveal-on-scroll reveal-delay-1" onclick="openDetailsModal('ACM Chapter Achievements', 'ACHIEVEMENTS', 'June 04, 2026 · 4 min read', 'Celebrating milestones reached this year — from national recognition at ACM India Summit to cross-chapter research and community expansion.')">
+              <div class="news-compact-img-wrap">
+                <img src="assets/images/paddel-racket-and-ball-in-front-of-an-outdoor-court-768x512-jpg.png" alt="ACM Chapter Achievements" class="news-compact-img" loading="lazy">
+              </div>
+              <div>
+                <span class="section-label" style="font-size: 0.6rem; color: var(--cyan); display: block; margin-bottom: 0.25rem;">ACHIEVEMENTS</span>
+                <h3 class="news-compact-title">ACM Chapter Achievements</h3>
+                <p class="news-compact-excerpt">Celebrating milestones reached this year — from national recognition to community growth.</p>
+                <div class="news-meta-row">
+                  <time class="news-date" style="color: #94a3b8; font-size: 0.625rem;">June 04, 2026</time>
+                  <span class="news-read-time" style="font-size: 0.625rem;">· 4 min read</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="news-compact-item reveal-on-scroll reveal-delay-2" onclick="openDetailsModal('Workshop Recaps', 'RECAP', 'June 04, 2026 · 2 min read', 'Key takeaways and learnings from our recent hands-on technical workshop sessions on fullstack development, AI model deployment, and cloud infrastructure.')">
+              <div class="news-compact-img-wrap">
+                <img src="assets/images/outdoor-padel-lesson-with-a-padel-coach-768x512-jpg.png" alt="Workshop Recaps" class="news-compact-img" loading="lazy">
+              </div>
+              <div>
+                <span class="section-label" style="font-size: 0.6rem; color: var(--cyan); display: block; margin-bottom: 0.25rem;">RECAP</span>
+                <h3 class="news-compact-title">Workshop Recaps</h3>
+                <p class="news-compact-excerpt">Key takeaways and learnings from our recent hands-on technical workshop sessions.</p>
+                <div class="news-meta-row">
+                  <time class="news-date" style="color: #94a3b8; font-size: 0.625rem;">June 04, 2026</time>
+                  <span class="news-read-time" style="font-size: 0.625rem;">· 2 min read</span>
+                </div>
+              </div>
+            </article>
+
+            <button type="button" class="btn-all-news reveal-on-scroll reveal-delay-3" onclick="openDetailsModal('ACM-W BLOG ARCHIVE', 'BLOG ARCHIVE', '2026', 'Access all technical articles, research paper summaries, event roundups, and student spotlights published by ACM-W NMIMS Indore.')">
+              VIEW ALL BLOG POSTS
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       15. SITE FOOTER (Dark Theme)
+  ═══════════════════════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <!-- Top Row: Newsletter & Header -->
+      <div class="footer-top-row">
+        <div>
+          <img src="assets/images/frame-1.png" alt="ACM-W Logo" class="footer-brand-logo">
+          <h2 class="footer-heading">
+            STAY CONNECTED<br>WITH <span class="text-cyan">ACM‑W</span>
+          </h2>
+        </div>
+
+        <div class="footer-newsletter-wrap">
+          <p class="footer-newsletter-text">Get the latest news &amp; updates delivered to your inbox.</p>
+          <form id="newsletterForm" class="newsletter-form">
+            <input type="email" placeholder="Your email address" required class="newsletter-input" aria-label="Email address for newsletter">
+            <button type="submit" class="newsletter-submit" aria-label="Subscribe to newsletter">
+              <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Links Grid -->
+      <div class="footer-links-grid">
+        <!-- About column -->
+        <div>
+          <p style="font-size: 0.875rem; color: var(--text-sky-dim); font-weight: 300; line-height: 1.65; margin-bottom: 1.5rem;">
+            Measuring growth through innovation, community engagement, and technical excellence over two years of impact.
+          </p>
+          <address class="footer-address">
+            <div class="footer-address-item">
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span>Super Corridor, Bada Bangarda, Indore</span>
+            </div>
+            <div class="footer-address-item">
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <a href="mailto:acm@nmims.edu" style="color: inherit;">acm@nmims.edu</a>
+            </div>
+          </address>
+        </div>
+
+        <!-- Pages Links -->
+        <div>
+          <h3 class="footer-col-title">Pages</h3>
+          <ul class="footer-link-list">
+            <li><a href="#home" class="footer-link" data-scroll-to="home">Home</a></li>
+            <li><a href="#about-us" class="footer-link" data-scroll-to="about-us">About</a></li>
+            <li><a href="#featured-projects" class="footer-link" data-scroll-to="featured-projects">Projects</a></li>
+            <li><a href="#upcoming-events" class="footer-link" data-scroll-to="upcoming-events">Events</a></li>
+            <li><a href="#latest-news" class="footer-link" data-scroll-to="latest-news">Blogs</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal Links -->
+        <div>
+          <h3 class="footer-col-title">Legal</h3>
+          <ul class="footer-link-list">
+            <li><a href="#" class="footer-link" onclick="openDetailsModal('Privacy Policy', 'LEGAL', '2026', 'ACM-W NMIMS Indore respects your privacy and ensures all student member data is protected in accordance with university standards.'); return false;">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link" onclick="openDetailsModal('Terms of Service', 'LEGAL', '2026', 'Terms and code of conduct for participants in ACM-W workshops, hackathons, and community programs.'); return false;">Terms of Service</a></li>
+            <li><a href="#" class="footer-link" onclick="openDetailsModal('Code of Conduct', 'LEGAL', '2026', 'We are committed to providing a harassment-free and inclusive experience for everyone across all genders and backgrounds.'); return false;">Code of Conduct</a></li>
+            <li><a href="#" class="footer-link" onclick="openDetailsModal('FAQ', 'HELP', '2026', 'Frequently asked questions regarding membership dues, benefits, national ACM student chapter perks, and leadership eligibility.'); return false;">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Links -->
+        <div>
+          <h3 class="footer-col-title">Social</h3>
+          <ul class="footer-social-list">
+            <li>
+              <a href="#" class="footer-social-link" aria-label="Twitter / X" onclick="showToast('Follow @acmw_indore on X for live event updates!', 'success'); return false;">
+                <div class="social-icon-box">
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.257 5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                </div>
+                <span style="font-family: var(--font-ui); font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.15em;">TWITTER</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-social-link" aria-label="LinkedIn" onclick="showToast('Connect with ACM-W NMIMS Indore on LinkedIn!', 'success'); return false;">
+                <div class="social-icon-box">
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </div>
+                <span style="font-family: var(--font-ui); font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.15em;">LINKEDIN</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-social-link" aria-label="Instagram" onclick="showToast('Follow @acmw_indore on Instagram!', 'success'); return false;">
+                <div class="social-icon-box">
+                  <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                  </svg>
+                </div>
+                <span style="font-family: var(--font-ui); font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.15em;">INSTAGRAM</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 ACM-W NMIMS Indore — All Rights Reserved</p>
+        <p>Designed with precision &amp; purpose</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       16. INTERACTIVE MODALS
+  ═══════════════════════════════════════════════════════════════ -->
+  <!-- Join Modal -->
+  <div id="joinModal" class="modal-backdrop" aria-hidden="true" role="dialog">
+    <div class="modal-window">
+      <button type="button" class="modal-close-btn" data-close-modal aria-label="Close modal">
+        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <div class="modal-header">
+        <span class="section-label" style="display: block; margin-bottom: 0.35rem;">Membership Application</span>
+        <h2 class="modal-title">JOIN <span class="text-cyan">ACM‑W</span></h2>
+        <p class="modal-subtitle">Fill in your details below to become an active member of our chapter.</p>
+      </div>
+
+      <form id="joinForm">
+        <div class="form-group">
+          <label for="joinName" class="form-label">Full Name</label>
+          <input type="text" id="joinName" required placeholder="e.g. Sarah Sharma" class="form-input">
+        </div>
+
+        <div class="form-group">
+          <label for="joinEmail" class="form-label">Email Address (College or Personal)</label>
+          <input type="email" id="joinEmail" required placeholder="e.g. sarah.sharma@nmims.edu" class="form-input">
+        </div>
+
+        <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div>
+            <label for="joinYear" class="form-label">Academic Year</label>
+            <select id="joinYear" class="form-select">
+              <option value="1st Year">1st Year (B.Tech / MCA)</option>
+              <option value="2nd Year">2nd Year (B.Tech / MCA)</option>
+              <option value="3rd Year">3rd Year (B.Tech)</option>
+              <option value="4th Year">4th Year (B.Tech)</option>
+            </select>
+          </div>
+          <div>
+            <label for="joinBranch" class="form-label">Branch / Major</label>
+            <select id="joinBranch" class="form-select">
+              <option value="Computer Science">Computer Science</option>
+              <option value="AI & Data Science">AI &amp; Data Science</option>
+              <option value="Information Tech">Information Tech</option>
+              <option value="Cyber Security">Cyber Security</option>
+              <option value="Other">Other Branch</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="joinInterest" class="form-label">Primary Technical Interest</label>
+          <select id="joinInterest" class="form-select">
+            <option value="Artificial Intelligence / ML">Artificial Intelligence &amp; Machine Learning</option>
+            <option value="Fullstack & Web Dev">Fullstack &amp; Modern Web Development</option>
+            <option value="Competitive Programming & DSA">Competitive Programming &amp; DSA</option>
+            <option value="Open Source & Cloud">Open Source &amp; Cloud Infrastructure</option>
+            <option value="UI/UX & Product Design">UI/UX &amp; Product Design</option>
+            <option value="Chapter Leadership & Events">Chapter Leadership &amp; Event Operations</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width: 100%; margin-top: 1.5rem;">
+          SUBMIT APPLICATION
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Event & Article Details Modal -->
+  <div id="detailsModal" class="modal-backdrop" aria-hidden="true" role="dialog">
+    <div class="modal-window">
+      <button type="button" class="modal-close-btn" data-close-modal aria-label="Close modal">
+        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <div class="modal-header">
+        <span id="detailsModalCategory" class="section-label" style="display: block; margin-bottom: 0.35rem;">CATEGORY</span>
+        <h2 id="detailsModalTitle" class="modal-title">EVENT TITLE</h2>
+        <p id="detailsModalDate" class="modal-subtitle" style="color: var(--cyan); font-family: var(--font-ui); font-weight: 600; letter-spacing: 0.15em;">DATE</p>
+      </div>
+
+      <div style="margin-bottom: 2rem;">
+        <p id="detailsModalDesc" style="font-size: 0.95rem; color: #e2e8f0; font-weight: 300; line-height: 1.75;"></p>
+      </div>
+
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <button type="button" class="btn-primary" onclick="closeAllModals(); openJoinModal();" style="flex: 1;">REGISTER / PARTICIPATE</button>
+        <button type="button" class="btn-secondary" data-close-modal style="flex: 1;">CLOSE</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Toast Container -->
+  <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+  <!-- Back to Top Button -->
+  <button type="button" id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top">
+    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+  </button>
+
+  <!-- Three.js 3D Engine -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Script Runtime -->
+  <script src="js/main.js"></script>
+</body>
+</html>
