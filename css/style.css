@@ -2911,11 +2911,70 @@ input, select, textarea {
   box-shadow: 0 0 14px var(--cyan-glow);
 }
 
+/* Domain Specialist Leads */
+.leads-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+  margin-top: 1.5rem;
+}
+
+.lead-domain-card {
+  position: relative;
+  background: var(--bg-dark-card);
+  border: 1px solid var(--border-white-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  backdrop-filter: blur(16px);
+  transition: all var(--transition-normal);
+}
+
+.lead-domain-card:hover {
+  border-color: rgba(var(--cyan-rgb), 0.5);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5), 0 0 24px rgba(var(--cyan-rgb), 0.15);
+  transform: translateY(-4px);
+}
+
+.lead-domain-role {
+  font-family: var(--font-ui);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+}
+
+.lead-domain-tag {
+  font-family: var(--font-ui);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--cyan);
+}
+
+.lead-domain-name {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-sky-dim);
+}
+
 /* Responsive Breakpoints for Team Section */
 @media (max-width: 1200px) {
   .team-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .leads-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -2930,7 +2989,7 @@ input, select, textarea {
 }
 
 @media (max-width: 540px) {
-  .team-grid {
+  .team-grid, .leads-grid {
     grid-template-columns: 1fr;
     gap: 18px;
   }
